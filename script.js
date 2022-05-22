@@ -29,7 +29,7 @@ function guessingGame(){
     guessDom.value = "";
     guessingDom.style.display = "unset";
     playingDom.style.display = "none";
-    finalDom.style.display = "";
+    finalDom.style.display = "display";
 
     answer = Math.floor(Math.random() * 100) +1;
     ansDom.value = answer;
@@ -72,7 +72,7 @@ function guessingGame(){
     averageDom.value = (parseInt(guessesDom.value))/(parseInt(gamesDom.value));
     playingDom.style.display  = "unset";
     guessingDom.style.display = "none";
-    if (guessDom.value == ansDom.value) finalDom.style.display = "display";
+    finalDom.style.display = "display";
     
     
     yesDom.focus();
